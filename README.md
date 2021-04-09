@@ -24,17 +24,18 @@ How much you eat matters more than what you eat when it comes to losing weight o
 - User can edit/delete their saved meals
 
 ## HTTP Routes
-- GET'/login', user can sign into account
-- GET'/logout', user can sign out of account
-- GET'/user/new', user can go to a signup page
-- POST'/user', user can sing up to make a new account
-- PUT'/user/:id/edit', user can edit account info
+[Users]
+- POST'/users/login', user can sign into account
+- POST'/user/new', user can sing up to make a new account
 - DELETE '/user/:id/', user can delete account
-- GET'/food', user can search/get nutrition info
-- POST'/user/:id/, user can save food nutrition info
-- POST'/user/:id/recipe' user can create meals
-- GET '/user/:id/recipe' user can see saved meals
-- DELETE '/user/:id/recipe/:id', user can delete meals
+- GET '/user/:id/meal' user can see saved meals
+- DELETE '/user/:id/meal/:id', user can delete meals
+
+[Foods]
+- POST'/search/food', user can search/get nutrition info
+- POST'/user/save/:foodId, user can save food nutrition info
+- GET'/search/foodId'
+
 
 ## MVP checklist 
 - Can user sign up, sign in and sing out?
