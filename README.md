@@ -23,6 +23,9 @@ How much you eat matters more than what you eat when it comes to losing weight o
 - User can save nutrition information and, create and save meals.
 - User can edit/delete their saved meals
 
+## ERD
+![1](./WIREFRAME/ERD.png)
+
 ## HTTP Routes
 - GET'/login', user can sign into account
 - GET'/logout', user can sign out of account

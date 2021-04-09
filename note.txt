@@ -12,3 +12,21 @@ https://developer.edamam.com/edamam-docs-nutrition-api
 
 API ID and key
 https://developer.edamam.com/admin/applications/1409621309640
+
+
+Project Requirements
+-Two repos in your own personal github, one containing your frontend and one containing your backend.
+-A backend express server that persists data to a database
+-At least 2 tables in your database
+-A sequelize model for each of your database tables
+-At least one association (1-t-m or m-t-m) among your sequelize models
+-Routes that allow CRUD operations on your database tables
+User authentication flow (creating an account, logging in, logging out)
+-A separate frontend express server that serves up html, css, and frontend js
+-Deploy both the frontend and the backend using Heroku (there will be a deployment jam!)
+-A README.md containing sections described below
+
+
+
+README preview
+Command+Shift+V
