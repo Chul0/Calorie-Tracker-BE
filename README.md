@@ -27,15 +27,16 @@ How much you eat matters more than what you eat when it comes to losing weight o
 ## HTTP Routes
 [Users]
 - POST'/users/login', user can sign into account
-- POST'/user/new', user can sing up to make a new account
-- DELETE '/user/:id/', user can delete account
-- GET '/user/:id/meal' user can see saved meals
-- DELETE '/user/:id/meal/:id', user can delete meals
+- POST'/users/new', user can sing up to make a new account
+- POST'/users/save/:foodId, user can save food nutrition info
+- DELETE '/users/:id/', user can delete account
+- DELETE '/users/:id/meal/:id', user can delete meals
+- PUT'/users/:id/edit', user can edit saved meals
 
 [Foods]
 - POST'/search/food', user can search/get nutrition info
-- POST'/user/save/:foodId, user can save food nutrition info
-- GET'/search/foodId'
+- GET'/search/:foodId'
+- POST '/userId/save/:foodId' user can see saved meals
 
 
 ## MVP checklist 
