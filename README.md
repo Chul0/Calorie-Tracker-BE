@@ -12,6 +12,7 @@ How much you eat matters more than what you eat when it comes to losing weight o
 ![1](./WIREFRAME/2.png)
 ![1](./WIREFRAME/3.png)
 ![1](./WIREFRAME/4.png)
+![1](./WIREFRAME/5.png)
 
 ## User Story
 
