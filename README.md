@@ -41,7 +41,7 @@ How much you eat matters more than what you eat when it comes to losing weight o
 - Can user sign up, sign in and sing out?
 - Can user get nutrition information?
 - Can user save and delete nutrition info?
-- Can user create meals?
+- Can user see saved nutrition info?
 
 ## Stretch goals
 - User can delete their account.
