@@ -8,6 +8,10 @@ Solo Project 2 (Backend)
 How much you eat matters more than what you eat when it comes to losing weight or building muscles. It is imperative to keep track of daily calorie intake and macro nutrients(Carbs, Fat, Protein). With this app, tracking food is fast and easy with this app.
 
 ## Wireframes
+![1](./WIREFRAME/1.png)
+![1](./WIREFRAME/2.png)
+![1](./WIREFRAME/3.png)
+![1](./WIREFRAME/4.png)
 
 ## User Story
 
