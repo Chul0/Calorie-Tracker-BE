@@ -1,0 +1,14 @@
+API
+
+GET
+-use [%20] as Space
+-be specific when search ! (like '1 medium apple'),(not 'apple')
+https://api.edamam.com/api/nutrition-data?app_id=44cd489d&app_key=
+87db56ceaa90943ddfaba099190b3f6e	&ingr=${1%20apple}
+                                        ${i can set it to take typed value from searchBar}
+
+DOCS 
+https://developer.edamam.com/edamam-docs-nutrition-api
+
+API ID and key
+https://developer.edamam.com/admin/applications/1409621309640
