@@ -30,3 +30,15 @@ User authentication flow (creating an account, logging in, logging out)
 
 README preview
 Command+Shift+V
+
+
+
+
+Work flow
+-Framework with frontend HTML, CSS
+-Setup (npm i, sequelize i, etc)
+-Make database(sequelize db:create, sequelize db:migrate), add constraints/validations, associations)
+-Set server.js and run servers in both frontend and backend.
+-CRUD 
+ •Signup
+
