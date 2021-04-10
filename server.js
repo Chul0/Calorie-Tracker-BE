@@ -12,66 +12,13 @@ app.use(morgan('tiny'))
 
 const models = require('./models')
 //////////////////////////////write code below///////////////////////////////
-
-//signup
-const createUser = async (req, res) => {
-  try {
-    const user = await models.user.create({
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      email: req.body.email,
-      password: req.body.password,
-      height: req.body.height,
-      weight: req.body.weight
-    })
-    
-    res.json({message: 'New user created', user})
-  } catch (error) {
-    //Validation error messages
-      if (error.errors[0].path === 'firstName') {
-      res.json({error: 'First name is required'})  
-      }else if(error.errors[0].path === 'lastName') {
-      res.json({error: 'Last name is required'})  
-      }else if(error.errors[0].path === 'password') {
-        res.json({error: 'Password is required'})  
-      }else if(error.errors[0].path === 'height') {
-        res.json({error: 'Height is required'})  
-      }else if(error.errors[0].path === 'weight') {
-        res.json({error: 'weight is required'})  
-      }else{
-      res.status(400)
-      res.json({error: 'Email is already used by someone'})
-    }
-  }
-}
-
-app.post('/users', createUser)
+const userRoutes = require('./routes/userRoutes')
 
 
-//signin
+//userRoutes
+app.use('/users', userRoutes) //need to use just one app.use per route!
 
 
-const login = async (req, res) => {
-  try {
-    const user = await models.user.findOne({
-      where:{
-        email: req.body.email
-      }
-    })
-    // console.log(user)
-    if(user.password === req.body.password){
-      res.json({message: 'login successful', user: user})
-    }else{
-      res.status(401)
-      res.json({error:'incorrect password'})
-    }
-
-  } catch (error) {
-    res.status(400)
-    res.json({error: 'login failed'})
-  }
-}
-app.post('/users/login', login)
 
 
 
