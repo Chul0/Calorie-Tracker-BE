@@ -22,6 +22,9 @@ module.exports = (sequelize, DataTypes) => {
         notEmpty:true
       }
     },
+    foodId: {
+      type: DataTypes.STRING
+    },
   }, {
     sequelize,
     modelName: 'food',

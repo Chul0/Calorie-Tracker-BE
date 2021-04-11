@@ -1,18 +1,17 @@
 API
 
-GET
--use [%20] as Space
--be specific when search ! (like '1 medium apple'),(not 'apple')
-https://api.edamam.com/api/nutrition-data?app_id=44cd489d&app_key=
-87db56ceaa90943ddfaba099190b3f6e	&ingr=${1%20apple}
-                                        ${i can set it to take typed value from searchBar}
-
 DOCS 
-https://developer.edamam.com/edamam-docs-nutrition-api
+https://developer.edamam.com/food-database-api-docs
+https://developer.edamam.com/admin/applications/1409621309641
 
-API ID and key
-https://developer.edamam.com/admin/applications/1409621309640
 
+'https://api.edamam.com/api/food-database/v2/parser?nutrition-type=logging&ingr=red%20apple&app_id={your app_id}&app_key={your app_key}'
+
+API ID
+09c1bf75
+
+Key
+580960872d600d9775b460e3916de0d6	
 
 Project Requirements
 -Two repos in your own personal github, one containing your frontend and one containing your backend.
@@ -45,6 +44,7 @@ Work flow
         •Signup
         •Signin
      [Read]
+        •axios request 
      [Update]
      [Delete]
 -        
