@@ -1,5 +1,5 @@
 const axios = require('axios')
-// const models = require('../models')
+const models = require('../models')
 
 const foodController = {}
 
@@ -14,6 +14,25 @@ foodController.search = async (req, res) => {
     }
 }
 
-
+foodController.save = async (req ,res) => {
+    try {
+        const newFood = await models.food.findOrCreate({
+            where:{
+                name: `${req.body.name}`,
+                foodId: `${req.body.foodId}`,
+            }
+        })
+        const user = await models.user.findOne({
+            where: {
+                id:req.params.userId
+            }
+        })
+        let addAssociation = await user.addFood(newFood[0])
+        // console.log(newFood)
+        res.json({newFood, user, addAssociation})
+    } catch (error) {
+        res.json(error)
+    }
+}
 
 module.exports = foodController;
