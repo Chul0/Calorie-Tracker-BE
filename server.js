@@ -13,11 +13,13 @@ app.use(morgan('tiny'))
 const models = require('./models')
 //////////////////////////////write code below///////////////////////////////
 const userRoutes = require('./routes/userRoutes')
+const foodRoutes = require('./routes/foodRoutes')
 
 
 //userRoutes
 app.use('/users', userRoutes) //need to use just one app.use per route!
-
+//foodRoutes
+app.use('/food', foodRoutes)
 
 
 

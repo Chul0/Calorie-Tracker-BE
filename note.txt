@@ -39,9 +39,14 @@ Work flow
 -Setup (npm i, sequelize i, etc)
 -Make database(sequelize db:create, sequelize db:migrate), add constraints/validations, associations)
 -Set server.js and run servers in both frontend and backend.
+-Controllers and Routers
 -CRUD 
- •Signup
- •Signin
- -
+    [Create]
+        •Signup
+        •Signin
+     [Read]
+     [Update]
+     [Delete]
+-        
 
 
