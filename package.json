@@ -6,7 +6,8 @@
     "morgan": "^1.10.0",
     "pg": "^8.5.1",
     "rowdy-logger": "^1.0.2",
-    "sequelize": "^6.6.2"
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0"
   },
   "name": "calorie-tracker-be",
   "description": "Solo Project 2 (Backend)",

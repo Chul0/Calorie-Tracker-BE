@@ -23,12 +23,9 @@ app.use('/food', foodRoutes)
 
 
 
-
-
-
 //////////////////////////////write code above///////////////////////////////
-const PORT = process.env.port || 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
-    console.log('backend server running!')
+    console.log(`backend server running on ${PORT}!`);
   routesReport.print()
 })
