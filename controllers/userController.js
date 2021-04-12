@@ -73,5 +73,20 @@ userController.getFood = async (req, res) => {
   }
 }
 
+//Delete account
+userController.delete = async (req, res) => {
+  try {
+    let user = await models.user.findOne({
+      where: {
+        id: req.params.id
+      }
+    })
+    await user.destroy()
+    res.json({user, message: 'Account deleted'})
+  } catch (error) {
+    res.json({error})
+  }
+}
+
 
   module.exports = userController;

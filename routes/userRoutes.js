@@ -10,10 +10,11 @@ const userRoutes = express.Router()
 
 userRoutes.post('/', userController.createUser) //signup
 userRoutes.post('/login', userController.login) //login
-userRoutes.get('/:userId/getfood', userController.getFood)
 
 
+userRoutes.get('/:userId/getfood', userController.getFood) //pull saved food from user
 
+userRoutes.delete('/:id', userController.delete)
 
 
 
