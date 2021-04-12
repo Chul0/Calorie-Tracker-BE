@@ -91,3 +91,8 @@ How much you eat matters more than what you eat when it comes to losing weight o
 8. Signout functionality
 9. Styling up browser with HTML, CSS
 </details>
+
+## API resourse
+
+[Edamam]
+https://developer.edamam.com/food-database-api-docs
