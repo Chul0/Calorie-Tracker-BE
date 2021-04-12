@@ -5,8 +5,9 @@ const foodRoutes = express.Router()
 
 
 
-foodRoutes.get('/search/:foodname', foodController.search)
-foodRoutes.post('/:userId/save', foodController.save)
+foodRoutes.get('/search/:foodname', foodController.search) //food search
+foodRoutes.post('/:userId/save', foodController.save) //save food to users
+
 
 
 

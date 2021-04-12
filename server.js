@@ -10,7 +10,6 @@ app.use(require('cors')())
 const morgan = require('morgan')//morgan is like console.log(on terminal)
 app.use(morgan('tiny'))
 
-const models = require('./models')
 //////////////////////////////write code below///////////////////////////////
 const userRoutes = require('./routes/userRoutes')
 const foodRoutes = require('./routes/foodRoutes')

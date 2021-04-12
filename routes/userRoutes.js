@@ -8,8 +8,9 @@ const userRoutes = express.Router()
 
 
 
-userRoutes.post('/', userController.createUser)
-userRoutes.post('/login', userController.login)
+userRoutes.post('/', userController.createUser) //signup
+userRoutes.post('/login', userController.login) //login
+userRoutes.get('/:userId/getfood', userController.getFood)
 
 
 
