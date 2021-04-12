@@ -73,7 +73,7 @@ userController.getFood = async (req, res) => {
   }
 }
 
-//Delete account
+//Delete user account
 userController.delete = async (req, res) => {
   try {
     let user = await models.user.findOne({
@@ -88,5 +88,22 @@ userController.delete = async (req, res) => {
   }
 }
 
+
+//Delete saved food 
+userController.deleteFood = async (req, res) => {
+  try {
+    let user = await models.user.findOne({
+      where:{
+        id: req.params.userId
+      }
+    })
+    let food = await user.getFood()
+    await user.removeFood(food)
+    // console.log(food)
+    res.json({user, food})
+  } catch (error) {
+    res.json({error})
+  }
+}
 
   module.exports = userController;
