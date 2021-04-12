@@ -8,11 +8,15 @@ Solo Project 2 (Backend)
 How much you eat matters more than what you eat when it comes to losing weight or building muscles. It is vital to keep track of daily calorie intake and macro nutrients(Carbs, Fat, Protein). With this app, tracking food is fast and easy with this app.
 
 ## Wireframes
+<details>
+<summary>Click to see wireframes</summary>
+
 ![1](./WIREFRAME/1.png)
 ![1](./WIREFRAME/2.png)
 ![1](./WIREFRAME/3.png)
 ![1](./WIREFRAME/4.png)
 ![1](./WIREFRAME/5.png)
+</details>
 
 ## User Story
 
@@ -27,17 +31,21 @@ How much you eat matters more than what you eat when it comes to losing weight o
 ![1](./WIREFRAME/ERD.png)
 ## HTTP Routes
 [Users]
-- POST'/users/login', user can sign into account
-- POST'/users/new', user can sing up to make a new account
-- POST'/users/save/:foodId, user can save food nutrition info
-- DELETE '/users/:id/', user can delete account
-- DELETE '/users/:id/meal/:id', user can delete meals
-- PUT'/users/:id/edit', user can edit saved meals
+| Method | Path                   | Purpose                     |
+|--------|------------------------|-----------------------------|
+| GET    | /users/:id             | Get user profile info       |
+| GET    | /users/:userId/getfood | Get saved food from user    |
+| POST   | /users                 | Sign-up                     |
+| POST   | /users/login           | Log-in                      |
+| PUT    | /users/:id/edit        | Edit user profile info      |
+| DELETE | /users/:id             | Delete user account         |
+| DELETE | /users/:userId/delete  | Delete saved food from user |
 
 [Foods]
-- POST'/search/food', user can search/get nutrition info
-- GET'/search/:foodId'
-- POST '/userId/save/:foodId' user can see saved meals
+| Method | Path                   | Purpose                         |
+|--------|------------------------|---------------------------------|
+| GET    | /food/search/:foodname | Get food info from external api |
+| POST   | /food/:userId/save     | User can save food              |
 
 
 ## MVP checklist 
@@ -49,4 +57,37 @@ How much you eat matters more than what you eat when it comes to losing weight o
 ## Stretch goals
 - User can delete their account.
 - User can see their daily calorie goals and the remainder of it.
-- User can create up to 5 meals for free, otherwise user has to subscribe.
+- User can create meals with saved food. 
+
+## Work flow
+<details>
+<summary>Click to see </summary>
+
+1. Work on backend and frontend synchronously<
+2. Framework with frontend HTML, CSS
+3. Setup (npm i, sequelize i, etc)
+4. Make database(sequelize db:create, sequelize db:migrate), add constraints/validations, associations
+5. Set server.js and run servers in both frontend and backend.
+6. Controllers and Routers
+7. CRUD 
+     <p>[Create]</p>
+
+    - Signup
+    - Signin
+    - Save food info        
+    <p>[Read]</p>
+
+    - User profile info
+    - Saved food from user 
+    - axios request 
+    <p>[Update]</p>
+
+    - user profile info edit
+    <p>[Delete]</p>
+    
+    - Delete user account
+    - Delete saved food
+
+8. Signout functionality
+9. Styling up browser with HTML, CSS
+</details>

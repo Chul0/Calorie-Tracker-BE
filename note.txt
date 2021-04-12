@@ -34,6 +34,7 @@ Command+Shift+V
 
 
 Work flow
+-Work on backend and frontend synchronously 
 -Framework with frontend HTML, CSS
 -Setup (npm i, sequelize i, etc)
 -Make database(sequelize db:create, sequelize db:migrate), add constraints/validations, associations)
@@ -45,9 +46,14 @@ Work flow
         •Signin
         •Save food info        
      [Read]
+        •User profile info
+        •Saved food from user 
         •axios request 
      [Update]
+        •user profile info edit
      [Delete]
--signout        
+        •Delete user account
+        •Delete saved food
+-Signout      
 
 
