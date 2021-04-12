@@ -7,6 +7,7 @@ const userRoutes = express.Router()
 
 
 
+userRoutes.get('/:id', userController.getUser) //pull saved food from user
 userRoutes.get('/:userId/getfood', userController.getFood) //pull saved food from user
 
 userRoutes.post('/', userController.createUser) //signup

@@ -56,6 +56,20 @@ userController.login = async (req, res) => {
       res.json({error: 'login failed'})
     }
   }
+
+//Get user info
+  userController.getUser = async (req, res) => {
+    try {
+      let user = await models.user.findOne({
+        where:{
+          id: req.params.id
+        }
+      })
+      res.json({user})
+    } catch (error) {
+      res.json({error})
+    }
+  }
   
 // Find saved food from user
 userController.getFood = async (req, res) => {
