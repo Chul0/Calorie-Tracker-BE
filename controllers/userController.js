@@ -106,4 +106,19 @@ userController.deleteFood = async (req, res) => {
   }
 }
 
+userController.update = async (req, res) => {
+  try {
+    let updates = req.body
+    let user = await models.user.findOne({
+      where:{
+        id: req.params.id
+      }
+    })
+    let finalStep = await user.update(updates)
+    res.json({finalStep})
+  } catch (error) {
+    res.json.error
+  }
+}
+
   module.exports = userController;
