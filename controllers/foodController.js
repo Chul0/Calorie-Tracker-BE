@@ -35,4 +35,18 @@ foodController.save = async (req ,res) => {
     }
 }
 
+foodController.searchOne = async (req,res) => {
+    try {
+        let search = await models.food.find({
+            where:{
+                foodId: req.body.foodId
+            }
+        })
+        res.send(search.data)
+    } catch (error) {
+        res.json({error})
+    }
+}
+
+
 module.exports = foodController;

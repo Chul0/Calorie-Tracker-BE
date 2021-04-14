@@ -17,3 +17,10 @@ Key
 
 README preview
 Command+Shift+V
+
+
+
+git add .
+git commit -m '---'
+git push origin main 
+git push heroku main 

@@ -9,6 +9,7 @@ foodRoutes.get('/search/:foodname', foodController.search) //food search
 foodRoutes.post('/:userId/save', foodController.save) //save food to users
 
 
+foodRoutes.get('/search/foodId', foodController.searchOne) 
 
 
 

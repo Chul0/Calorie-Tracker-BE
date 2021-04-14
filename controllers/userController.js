@@ -120,6 +120,7 @@ userController.deleteFood = async (req, res) => {
   }
 }
 
+//user info update
 userController.update = async (req, res) => {
   try {
     let updates = req.body
